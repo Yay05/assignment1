@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/website.css">
+    <script src="./js/website.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <label class="logo">FEBIN</label>
+        <ul>
+            <li><a href="#" onclick=" closePopup3(),closePopup1(),closePopup2()">Home</a></li>
+            <li><a href="#" onclick="openPopup3(),openPopup1(),closePopup2()">About Me</a></li>
+            <li><a href="#" onclick="openPopup3(),openPopup2(),closePopup1()">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="container">
+        <p class="p1">FEBIN <span>BIJU</span></p>
+        <p class="p2">Web Developer</p>
+        <button id="button" onclick="openPopup3(),openPopup2(),closePopup1()">Get in Touch</button>
+    </div>
+    <div class="about" id="popup">
+        <div class="aboutimg"><img src="../images/ace.jpg" height="300px" width="320px" /></div>
+        <div class="about1">
+            <p class="p3">FEBIN <span>BIJU</span></p>
+            <p class="p4">Web Developer</p>
+            <p class="p5">
+                I am Febin Biju, a devoted and enthusiastic web developer with a strong commitment to my work. My
+                aspiration is to become an integral part of an organization where I can harness my skills and abilities
+                to not only contribute to the growth of the company but also to nurture my own professional development.
+            </p>
+            <button id="button1"><a href="cv.html">Learn More</a></button>
+        </div>
+
+    </div>
+    <div class="contact" id="contact">
+        <p class="p6">Get in <span>Touch</span></p>
+        <hr>
+        <div class="contact-details">
+            <div class="address"><img src="../images/location.png" />Pulickal House,Mankuva p.o,Mankuva</div>
+            <div class="ph"><img src="../images/phone-call.png" />9605782752</div>
+            <div class="gmail"><img src="../images/gmail.png" />febinbiju0507@gmail.com</div>
+            <div class="linkedin"><img src="../images/linkedin.png" />https://www.linkedin.com</div>
+        </div>
+        <form class="msg">
+            <input type="text" id="name" placeholder="Name"><input type="text" id="email" placeholder="Email"><br>
+            <textarea id="note" placeholder="Message"></textarea><br>
+            <button type="button" id="button2">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>
